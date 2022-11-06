@@ -1,6 +1,9 @@
-html, body {
+* {
   margin: 0px;
   padding: 0px;
+}
+
+html, body {
   background: #fff1ff;
 }
 
@@ -41,7 +44,15 @@ header {
 }
 
 .box-login {
-  text-align: right;
+  width: 100%;
+}
+
+.box-login h3 {
+  display: inline;
+}
+
+#greeting, #logout-btn {
+  text-align: left;
 }
 
 aside {

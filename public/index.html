@@ -12,14 +12,12 @@
   <div class="container">
     <header>
       <div class="box-login">
-        <form>
-          <input 
-          required
-          maxlength="15"
-          type="text"
-          placeholder="닉네임을 입력해주세요." />
+        <form class="hidden" id="login-form">
+          <input required maxlength="15" type="text" placeholder="닉네임을 입력해주세요." />
           <input type="submit" value="Login" />
         </form>
+        <h3 class="hidden" id="greeting"></h3>
+        <button clss="hidden" id="logout-btn" value="Logout">Logout</button>
       </div>
     </header>
     <aside>sidebar
