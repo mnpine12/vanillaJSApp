@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/styles/layout.css" />
-  <link rel="stylesheet" href="./src/styles/clock.css" />
+  <link rel="stylesheet" type="text/css" href="./src/styles/layout.css" />
+  <link rel="stylesheet" type="text/css" href="./src/styles/clock.css" />
+  <link rel="stylesheet" type="text/css" href="./src/styles/thema.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/hanna.css" />
+  <!--아이콘 넣기-->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF" crossorigin="anonymous"></script> -->
   <title>vanilla JS App</title>
 </head>
 <body>
@@ -42,22 +46,28 @@
     <!-- todolist -->
     <aside>
       <div class="box-todolist">
+        <h2 style="text-align:center">To-Do List</h2>
+        <br>
         <form class="todo-form" id="todo-form">
-          <input type="text" value="" />
+          <input id="todo-input" type="text" size=30 />
         </form>
         <br>
         <ul id="todo-list"></ul>
       </div>
     </aside>
     <!-- 위치정보와 날씨 받아오기 -->
-    <footer>footer
-      <div class="box-gps"></div>
-      <div class="box-weather"></div>
+    <footer>
+      <h2>오늘의 날씨 입니다. </h2><br>
+      <div class="box-weather" id="weather">
+        <span></span>
+        <span></span>
+      </div>
     </footer>
   </div>
   <script src="./src/user.js"></script>
   <script src="./src/clock.js"></script>
   <script src="./src/todolist.js"></script>
-  <script src="./src/weather.js"></script>
+  <script src="./src/gpsWeather.js"></script>
+  <script src="./src/thema.js"></script>
 </body>
 </html>

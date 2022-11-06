@@ -1,0 +1,17 @@
+{
+  "thema": [
+    {
+      "id": "01",
+      "name": "blue",
+      "backColor": "#ffffff",
+      "headImg": "",
+      "headColor": "#b9ecff",
+      "todoimage": "bg_blue_02.png",
+      "todoborder": "double 5px lightslategray",
+      "clockBgImg": "bg_blue.png",
+      "footerImg": "",
+      "fontFamily": "'Hanna', sans-serif"
+    }
+  ]
+  
+}
