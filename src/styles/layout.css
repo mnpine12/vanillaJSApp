@@ -22,13 +22,13 @@ body {
   margin: 0px auto;
   height: 700px;
   width: 800px;
-  grid-template-columns: minmax(200px, 20%);
-  grid-template-rows: 70px 1fr 1fr 100px;
-  grid-gap: 1rem;
+  grid-template-columns: minmax(300px, 20%);
+  grid-template-rows: 50px 1fr 1fr 100px;
+  grid-gap: 10px;
   grid-template-areas: 
   "header header header"
-  "sidebar main main"
-  "sidebar main main"
+  "main main sidebar"
+  "main main sidebar"
   "footer footer footer";
 }
 
@@ -41,6 +41,7 @@ header {
   display: flex;
   justify-content: right;
   align-items: center;
+  text-align: right;
 }
 
 .box-login {
@@ -52,17 +53,17 @@ header {
 }
 
 #greeting, #logout-btn {
-  text-align: left;
-}
-
-aside {
-  background: lightseagreen;
-  grid-area: sidebar;
+  text-align: right;
 }
 
 main {
   background: lightgreen;
   grid-area: main;
+}
+
+aside {
+  background: lightseagreen;
+  grid-area: sidebar;
 }
 
 footer {

@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="container">
+    <!-- 사용자 로그인을 보여주는 header -->
     <header>
       <div class="box-login">
         <form class="hidden" id="login-form">
@@ -20,16 +21,31 @@
         <button clss="hidden" id="logout-btn" value="Logout">Logout</button>
       </div>
     </header>
-    <aside>sidebar
-      <div class="box-sidebar"></div>
-    </aside>
-    <main>main
-      <div class="box-clock"></div>
-      <div class="box-todolist"></div>
+    <!-- 시간과 명언 보여주기 -->
+    <main>
+      <div class="box-clock">
+        <div class="clock">
+          <div class="hour">
+            <div class="hr" id="hr"></div>
+          </div>
+          <div class="min">
+            <div class="mn" id="mn"></div>
+          </div>
+          <div class="sec">
+            <div class="sc" id="sc"></div>
+          </div>
+        </div>
+      </div>
+      <h1 class="clock-digital" id="digital">00:00:00</h1>
+      <div class="box-quotes"></div>
     </main>
+    <!-- todolist -->
+    <aside>sidebar
+      <div class="box-todolist"></div>
+    </aside>
+    <!-- 위치정보와 날씨 받아오기 -->
     <footer>footer
       <div class="box-gps"></div>
-      <div class="box-quotes"></div>
       <div class="box-weather"></div>
     </footer>
   </div>
