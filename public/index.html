@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../src/styles/layout.css" />
+  <link rel="stylesheet" href="../src/styles/clock.css" />
+  <title>vanilla JS App</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="box-login">
+        <form>
+          <input 
+          required
+          maxlength="15"
+          type="text"
+          placeholder="닉네임을 입력해주세요." />
+          <input type="submit" value="Login" />
+        </form>
+      </div>
+    </header>
+    <aside>sidebar
+      <div class="box-sidebar"></div>
+    </aside>
+    <main>main
+      <div class="box-clock"></div>
+      <div class="box-todolist"></div>
+    </main>
+    <footer>footer
+      <div class="box-gps"></div>
+      <div class="box-quotes"></div>
+      <div class="box-weather"></div>
+    </footer>
+  </div>
+  <script src="../src/user.js"></script>
+  <script src="../src/clock.js"></script>
+  <script src="../src/todolist.js"></script>
+  <script src="../src/weather.js"></script>
+</body>
+</html>
