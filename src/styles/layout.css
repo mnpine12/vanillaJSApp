@@ -3,10 +3,6 @@
   padding: 0px;
 }
 
-html, body {
-  background: #fff1ff;
-}
-
 .hidden {
   display: none;
 }
@@ -17,7 +13,6 @@ body {
 }
 
 .container {
-  background: #ffb6c1;
   display: grid;
   margin: 0px auto;
   height: 700px;
@@ -57,13 +52,37 @@ header {
 }
 
 main {
-  background: lightgreen;
   grid-area: main;
+  /* 해당 부분의 배경 이미지 바꾸기 thema.js */
+  background-image: url(../../public/images/bg_blue.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 aside {
-  background: lightseagreen;
+  max-width: 400px;
   grid-area: sidebar;
+  padding: 20px;
+  border: double 5px lightslategray;
+  /* 해당 부분의 배경 이미지 바꾸기 thema.js */
+  background-image: url(../../public/images/bg_blue_02.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box-todolist {
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  margin: 20px;
+}
+
+#todo-list {
+  line-height:180%
 }
 
 footer {
