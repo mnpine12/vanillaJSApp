@@ -7,6 +7,7 @@ const images = ["01.jpg", "02.jpg", "01.jpg"];
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
 bgImage.src = `${IMAGES_PATH}/${chosenImage}`;
+bgImage.style = "width:700px; height:378; display: block; margin: 0 auto;";
 console.log(bgImage.src);
 document.body.appendChild(bgImage);
 
