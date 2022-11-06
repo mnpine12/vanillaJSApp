@@ -1,10 +1,22 @@
 const bgImage = document.createElement("img");
-const IMAGES_PATH = "../public/images/";
+const IMAGES_PATH = "./public/images";
 
 const selectThema = "blue" //document.querySelector("#thema-blue");
 
-const images = ["bg_blue_02", "bg_blue_03", "bg_blue"];
+const images = ["01.jpg", "02.jpg", "01.jpg"];
 const chosenImage = images[Math.floor(Math.random() * images.length)];
+
+bgImage.src = `${IMAGES_PATH}/${chosenImage}`;
+console.log(bgImage.src);
+document.body.appendChild(bgImage);
+
+// function changeImage(changeImage) {
+//   const todoList = document.querySelector("#todolist-wrap");
+//   chosenImage += IMAGES_PATH+changeImage;
+//   if(todoList) {
+//     todoList.style.backgroundImage(changeImage);
+//   }
+// }
 
 // const themaInfo = {
 //   name: "blue",
